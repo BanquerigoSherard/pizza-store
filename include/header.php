@@ -6,7 +6,7 @@
   		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   		
   		
-<title>BakeNCake</title>
+<title>Pizza Haus</title>
 <style type="text/css">
 		@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 	*{
@@ -16,7 +16,8 @@
 		height: 30px;
 		width: 100%;
 		padding: 5px;
-		background-color:#787a7d;
+		background-color:black;
+		color:white;
 
 	}
 	nav {
@@ -59,7 +60,7 @@
 
 	
 </style>
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
 </head>

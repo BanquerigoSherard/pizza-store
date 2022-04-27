@@ -10,7 +10,7 @@ if(!isset($_SESSION['admin_id'])){
 <?php include 'head.php';
   include '../connections/connect.php';
  ?>
-<body style="background-color: #e0f8fd">
+<body style="background-color: rgb(253, 224, 224)">
  <div class="wrapper">
   
 
@@ -124,7 +124,7 @@ if(!isset($_SESSION['admin_id'])){
       <button class="btn btn-light text-dark" id="slideleft" style="font-size: 10px;"><i class="fas fa-arrow-left"></i></button>
 
        <button class="btn btn-light text-dark d-none" id="slideright" style="font-size: 10px;"><i class="fas fa-arrow-right"></i></button>
-         <h5 class="text-primary text-secondary" style="position:absolute; top:10px;right:10px;font-weight:bolder;font-family: 'Annie Use Your Telescope', cursive;">BakeN'Cake</h5>
+         <h5 class="text-primary text-secondary" style="position:absolute; top:10px;right:10px;font-weight:bolder;font-family: 'Rye', cursive;">Pizza Haus</h5>
 
      </div> 
 

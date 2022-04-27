@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #d4dee0; font-size: 14px">
+<nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #f4caca; font-size: 14px">
   <div class="container-fluid">
    
     <div class="" id="navbarNav">
@@ -10,7 +10,7 @@
                          while($row = mysqli_fetch_array($getting_category)){
                         ?>
                            <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="category.php?sortbycategory=<?php echo $row['cat_id'] ?>&category=<?php echo $row['category_name'] ?>"><?php echo $row['category_name'] ?></a>
+                        <a style='color:black;' class="nav-link active" aria-current="page" href="category.php?sortbycategory=<?php echo $row['cat_id'] ?>&category=<?php echo $row['category_name'] ?>"><?php echo $row['category_name'] ?></a>
                       </li>
                         <?php
                          }

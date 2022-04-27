@@ -9,7 +9,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
   		
-<title>BakeNCake &middot; Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+<title>Pizza Haus &middot; Admin</title>
 <style type="text/css">
 		@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 	*{
@@ -22,7 +25,7 @@
 		z-index: 1000;
 		position: fixed;
 		padding: 10px;
-		background-color: #eef3f4;
+		background-color: #f4f0ee;
 	}
 	.userinfo {
 		text-align: center;

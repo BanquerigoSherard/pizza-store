@@ -89,9 +89,9 @@ include 'connections/connect.php';
   	 
   
   	 
-    <div class="fixed-top bg-light shadow  d-none" style="border-bottom: 4px solid #83b1e4" id="cartalert"   >
-     <h5 class="text-primary" style="font-weight:bolder;font-family: 'Annie Use Your Telescope', cursive;float: left;padding: 10px">BakeN'Cake</h5> 
-     <a href="cart.php"><h6 style="float: right;  font-weight: bolder;margin-right: 10px ;padding: 5px;padding-top: 15px;">Shopping Cart   <span class="badge badge-danger bg-danger" style="" id="countcarts"></span></h6></a>
+    <div class="fixed-top bg-danger shadow  d-none" style="border-bottom: 4px solid black" id="cartalert"   >
+    <h5 style="font-weight:bolder;font-family: 'Rye', cursive;float: left;padding: 10px; color:white">Pizza Haus</h5> 
+    <a href="cart.php"><h6 style="float: right;  font-weight: bolder;margin-right: 10px ;padding: 5px;padding-top: 15px; color:white;">Shopping Cart   <span class="badge badge-danger bg-dark" style="" id="countcarts"></span></h6></a>
 
     </div> 
 

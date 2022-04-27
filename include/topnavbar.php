@@ -1,18 +1,18 @@
  <div class="topbar">
 		 		<h6 style="float: left;" class="text-light">Globe/Tm: +639557653775 <i class="fas fa-phone"></i></h6>
-		 	<h6 style="float: right;" class="text-light">Follow us:@Facebook.BakeNCake</h6>
+		 	<h6 style="float: right;" class="text-light">Follow us: @Facebook.PizzaHaus</h6>
 		 </div> 
 	
- 	<nav class="bg-light">
+ 	<nav class="bg-danger">
  		  
  		 
 
  		  
- 		     <div class="row bg-light">
+ 		     <div class="row bg-danger">
 
  		     	 <div class="col-md-2">
             <a href="index.php" style="text-decoration: none">
- 		     	 	  <h3 class="text-primary" id="bnctitle" style="font-weight:bolder;font-family: 'Annie Use Your Telescope', cursive;padding: 20px">BakeN'Cake</h3>
+ 		     	 	  <h3 id="bnctitle" style="font-weight:bolder;font-family: 'Rye', cursive;padding: 20px; color:white;">Pizza Haus</h3>
  		     	 </a>
            </div> 
            
@@ -40,7 +40,7 @@
                         }else {
                           ?>
                          
-                            <button class="btn btn-light mt-3 text-secondary" id="cartbutton"  onclick="window.location.href='cart.php'" style="border-radius: 25px;position: relative;">
+                            <button class="btn btn-dark mt-3 text-light" id="cartbutton"  onclick="window.location.href='cart.php'" style="border-radius: 25px;position: relative;">
                   <i class="fas fa-shopping-cart" style="font-size: 20px;"></i>
                   <span class="badge badge-danger bg-danger" style="font-size: 10px;border-radius: 20px;position: absolute;" id="countcart"></span>
                 </button>
@@ -57,7 +57,7 @@
                           ?>
                         
                            
-                            <button class="btn btn-light mt-3 text-secondary " onclick="window.location.href='wishlist.php'" style="border-radius: 25px;position: relative; margin-left: 10px;">
+                            <button class="btn btn-dark mt-3 text-light " onclick="window.location.href='wishlist.php'" style="border-radius: 25px;position: relative; margin-left: 10px;">
                 
                   <i class="fas fa-heart" style="font-size: 20px;"></i>
                   <span class="badge badge-danger bg-danger"  style="font-size: 10px;border-radius: 20px;position: absolute;" id="countwlist"></span>
@@ -88,7 +88,7 @@
     ?> 
 
        <div class="dropdown">
-  <a class="btn btn-light  mt-1 text-secondary" href="#" role="button"  style="padding: 5px">
+  <a class="btn btn-dark  mt-1 text-light" href="#" role="button"  style="padding: 5px">
  
   <span style="font-weight: bolder">Welcome <br>  <span class="text-primary"><?php echo $_SESSION['user_name'] ?></span></span>
   </a>
@@ -156,7 +156,7 @@
   }else {
     ?>  
         <div class="dropdown">
-  <a class="btn btn-light  mt-1 text-secondary" href="#" role="button"  style="border-radius: 40px;padding: 10px">
+  <a class="btn btn-dark  mt-1 text-light" href="#" role="button"  style="border-radius: 40px;padding: 10px">
   <i class="far fa-user" style="font-size: 20px"></i> <br>
   <span style="font-weight: bolder">Welcome Customer</span>
   </a>
