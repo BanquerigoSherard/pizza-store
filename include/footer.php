@@ -2,7 +2,7 @@
   	  	 <div class="container">
   	  	 	 <div class="row" id="footrow">
   	  	 	 	 <div class="col-md-4 e">
-  	  	 	 	 	  <h3 class="text-primary" style="font-weight:bolder;font-family: 'Rye', cursive;padding: 20px">Pizza Haus</h3>
+  	  	 	 	 	  <h3 class="text-primary" style="font-weight:bolder;font-family: 'Courgette', cursive;padding: 20px">EB Fashion</h3>
   	  	 	 	 	  <span>All rights reserved &middot; 2021</span>
   	  	 	 	 </div> 
   	  	 	 	  <div class="col-md-4 e">

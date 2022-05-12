@@ -11,8 +11,8 @@
   		
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
-<title>Pizza Haus &middot; Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Rye&display=swap" rel="stylesheet">
+<title>EB Fashion &middot; Admin</title>
 <style type="text/css">
 		@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 	*{

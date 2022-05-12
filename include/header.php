@@ -6,7 +6,7 @@
   		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   		
   		
-<title>Pizza Haus</title>
+<title>EB Fashion</title>
 <style type="text/css">
 		@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 	*{
@@ -42,7 +42,9 @@
 	}
 	
 	
-
+	.purple-rain{
+		background-color: #351b55;
+	}
 	.det::-webkit-scrollbar {
  
   width: 0px;
@@ -62,5 +64,5 @@
 </style>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Rye&display=swap" rel="stylesheet">
 </head>
