@@ -15,12 +15,12 @@ if(isset($_SESSION['admin_id'])){
     	 <!--<link rel="shortout icon" type="image/x-icon" href="">--> <!---->
     	  <script src="https://kit.fontawesome.com/129b086bc9.js" crossorigin="anonymous"></script>
   		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-<title>Signin - Pizza Haus</title>
+<title>Signin - EB Fashion</title>
 
 <style type="text/css">
 	@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 	*{
-		font-family: 'Rye';
+		font-family: 'Courgette';
 	}
 	.form-control {
 		
@@ -42,7 +42,7 @@ if(isset($_SESSION['admin_id'])){
 <?php include '../include/header.php' ?>
 </head>
 
-<body style="background-color: #201c1c">
+<body style="background-color: #956cb7">
 
 	 <div class="container">
 	 	<p style="user-select: none"><br></p>
@@ -52,7 +52,7 @@ if(isset($_SESSION['admin_id'])){
 	 	 
 	 	 <div class="col-md-4 col-sm-4 offset-md-2">
 	 	 		
-	 	 		 <div class="card shadow-sm" style="border-radius: 20px; background-color:#ffe4e1; color:black;">
+	 	 		 <div class="card shadow-sm" style="border-radius: 20px; background-color:#fde1ff; color:black;">
 	 	 		 	 <div class="card-body">
 	 	 		 	 	<!---Login-->
 	 	 		 	 	 <form method="post" action="login.php" id="login" class="" onsubmit="return false">
@@ -61,7 +61,7 @@ if(isset($_SESSION['admin_id'])){
 	 	 		 	 	
 	 	 		 	 	 <div class="container py-4" >
 	 	 		 	 	 		<link rel="preconnect" href="https://fonts.googleapis.com">
-	 	 		 	 	 		<h3 class="text-dark mt-5 mb-4" style="text-align: center;font-weight:bolder;font-family: 'Rye', cursive;">Pizza Haus</h3>
+	 	 		 	 	 		<h3 class="text-dark mt-5 mb-4" style="text-align: center;font-weight:bolder;font-family: 'Courgette', cursive;">EB Fashion</h3>
 
 	 	 		 	 	 		<div class="alert alert-danger d-none" id="logalert" role="alert" style="text-align: center;padding: 3px">
 									<span class="text-danger" style="font-size: 13px;font-weight: bolder;">Unknown Email or Password</span>
@@ -222,19 +222,19 @@ if(isset($_SESSION['admin_id'])){
 
 	 	 </div> 
 	 	  <div class="col-md-6 col-sm-8" >
-	 	  		 <div class="text " >
-	 	  	<img src="../bg/undraw_cookie_love_ulvn.svg" style="max-height: 400px">
+	 	  		 <div class="text text-center" >
+	 	  	<img src="../bg/bg.png" style="max-height: 500px">
 	 	  	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 	 	  
 	 	  	 	 <div class="subtitle"> 
-	 	  	 	 	<h2 class="text-light" style="font-family: 'Rye', cursive;font-weight: bolder;">Roll the dice. <br> Take a slice! ッ</h2>
+	 	  	 	 	<h2 class="text-light" style="font-family: 'Courgette', cursive;font-weight: bolder;">Style and Passion, <br> Always the Fashion! ッ</h2>
 	 	  	 	 </div>
 	 	  	 </div> 
 
 
-	 	  	  <div class="arr" style="position: absolute;bottom: 10px; right: 20px">Allrightsreserved&middot;2021</div> 
+	 	  	  <div class="arr" style="position: absolute;bottom: 10px; right: 20px">Allrightsreserved&middot;2022</div> 
 	 	  	  
 	 	  	 
 	 	  </div> 

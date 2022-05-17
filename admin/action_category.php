@@ -180,7 +180,12 @@ if(isset($_POST['deletecat'])){
 if(isset($_POST['editcategory'])){ 
 	$cat = $_POST['cat'];
 	$catid = $_POST['catid'];
-	$editcategory = "UPDATE `category` SET`category_name`='$cat'  WHERE cat_id ='$catid' ";
+	$editcategory = "UPDATE `category` SET `category_name`='$cat'  WHERE cat_id ='$catid' ";
+	echo "
+		<script>
+			alert('$editcategory');
+		</script>
+	";
 	mysqli_query($con,$editcategory);
 	
 }

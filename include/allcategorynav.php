@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #f4caca; font-size: 14px">
+<nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #d1caf4; font-size: 14px">
   <div class="container-fluid">
    
     <div class="" id="navbarNav">

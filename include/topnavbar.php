@@ -1,18 +1,18 @@
  <div class="topbar">
 		 		<h6 style="float: left;" class="text-light">Globe/Tm: +639557653775 <i class="fas fa-phone"></i></h6>
-		 	<h6 style="float: right;" class="text-light">Follow us: @Facebook.PizzaHaus</h6>
+		 	<h6 style="float: right;" class="text-light">Follow us: @Facebook.EBFashion</h6>
 		 </div> 
 	
- 	<nav class="bg-danger">
+ 	<nav class="purple-rain">
  		  
  		 
 
  		  
- 		     <div class="row bg-danger">
+ 		     <div class="row purple-rain">
 
  		     	 <div class="col-md-2">
             <a href="index.php" style="text-decoration: none">
- 		     	 	  <h3 id="bnctitle" style="font-weight:bolder;font-family: 'Rye', cursive;padding: 20px; color:white;">Pizza Haus</h3>
+ 		     	 	  <h3 id="bnctitle" style="font-weight:bolder;font-family: 'Courgette', cursive;padding: 20px; color:white;">EB Fashion</h3>
  		     	 </a>
            </div> 
            
