@@ -58,11 +58,17 @@ if(!isset($_SESSION['admin_id'])){
                     <span>Sales</span></a>
             </li>
 
-               <li class="nav-item navitems">
-                <a class="nav-link navlinks  " href="orders.php">
-                   <i class="fas fa-cart-arrow-down"></i>
-                    <span>Orders</span></a>
-            </li>
+            <div class="wrapper">
+                        <li class="nav-item navitems">
+
+                            <a class="nav-link navlinks text-secondary " href="orders.php">
+                                <i class="fas fa-cart-arrow-down"></i>
+                                <span>Orders</span>
+                                <span class="badge"><?php echo $count[0] ?></span>
+
+                            </a>
+                        </li>
+                    </div>
 
             <!-- Divider -->
             <hr class="sidebar-divider">

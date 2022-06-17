@@ -272,7 +272,7 @@ if(isset($_SESSION['admin_id'])){
 	 	               		$('#logalert').addClass('d-none');	
 
 	 	               		setInterval(function(){
-	 	               			window.location.href="../cart.php";
+	 	               			window.location.href="../index.php";
 	 	               		},2000);
 	 	               	}else if (data == 'adminmatch'){
 	 	               			$('#em_lg').removeClass('is-invalid');

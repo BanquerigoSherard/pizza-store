@@ -339,7 +339,7 @@ if(isset($_POST['cartitems'])){
   <input class="form-check-input" type="radio" required="" name="flexRadioDefault" id="flexRadioDefault2" required="" value="deliver" >
    <input class="form-check-input d-none" type="radio" required="" name="flexRadioDefault" id="flexRadioDefault3" required="" value="deliver" >
   <label class="form-check-label" for="flexRadioDefault2">
-   Deliver Now <i class="fas fa-info-circle text-secondary" style="font-size: 12px" data-bs-toggle="tooltip" data-bs-placement="right" title="Online payment is available. and had your order delivered to your door"></i>
+   Cash On Delivery <i class="fas fa-info-circle text-secondary" style="font-size: 12px" data-bs-toggle="tooltip" data-bs-placement="right" title="Online payment is available. and had your order delivered to your door"></i>
   </label>
 </div>
 <hr>

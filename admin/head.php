@@ -5,6 +5,7 @@
 
     	 <script src="https://kit.fontawesome.com/129b086bc9.js" crossorigin="anonymous"></script>
   		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		  <link rel="stylesheet" type="text/css" href="badge.scss">
   	 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
@@ -101,5 +102,6 @@
   }
 }
 </style>
-    	
+<?php $order_count = mysqli_query($con, "SELECT COUNT(*) FROM `transaction` where status != 'completed' and paymentmethod != 'reserve' "); 
+      $count = mysqli_fetch_array($order_count);?> 	
 </head>
