@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 23, 2022 at 09:24 AM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.0.15
+-- Generation Time: May 12, 2022 at 04:20 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -68,6 +68,13 @@ CREATE TABLE `cart` (
   `user_id` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`cart_id`, `prod_id`, `quantity`, `itemprice`, `total`, `user_id`) VALUES
+(293, 19, 1, 249.99, 249.99, '21');
+
 -- --------------------------------------------------------
 
 --
@@ -85,10 +92,10 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`cat_id`, `category_name`, `datecreated`) VALUES
-(6, 'Birthdays', '2021-12-22 06:54:40'),
-(7, 'Anniversarries', '2021-12-22 06:54:40'),
-(12, 'Monthsarries', '2021-12-22 07:52:05'),
-(16, 'Wedding', '2021-12-23 12:25:25');
+(6, 'Mens', '2021-12-22 06:54:40'),
+(7, 'Womens', '2021-12-22 06:54:40'),
+(12, 'Children', '2021-12-22 07:52:05'),
+(16, 'Outdoors', '2021-12-23 12:25:25');
 
 -- --------------------------------------------------------
 
@@ -107,13 +114,13 @@ CREATE TABLE `photo` (
 --
 
 INSERT INTO `photo` (`p_id`, `prod_id`, `photo`) VALUES
-(40, 19, '119Photo_bg.jpg'),
-(41, 20, '168Photo_banner.jfif'),
-(42, 20, '818Photo_download.jfif'),
-(43, 20, '450Photo_photo-1578985545062-69928b1d9587.jfif'),
-(45, 22, '2021-02-24.png'),
-(46, 22, '2021-03-12.png'),
-(47, 22, '2021-03-14 (1).png');
+(40, 19, '999Photo_brownparka.png'),
+(41, 20, 'gucci-1.png'),
+(42, 20, '715Photo_gucci 3.png'),
+(43, 20, 'gucci-2.png'),
+(45, 22, '406Photo_floral.png'),
+(46, 22, '406Photo_floral.png'),
+(47, 22, '406Photo_floral.png');
 
 -- --------------------------------------------------------
 
@@ -135,9 +142,9 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`prod_id`, `name`, `description`, `cat_id`, `price`, `datecreated`) VALUES
-(19, 'Brides- Wedding Cake', ' Lorem ipsum dolor sit amet, consectetur adipisici', 16, 1500.5, '2021-12-23 13:56:45'),
-(20, 'Chocolate Muffinsss', ' Lorem ipsum dolor sit amet, consectetur adipisici', 6, 2500, '2021-12-23 13:58:03'),
-(22, 'Photonot_mine', 'Just a bunch of cake', 16, 600, '2021-12-30 13:51:30');
+(19, 'Brown Parka', 'Great for Outdoors!', 16, 249.99, '2021-12-23 13:56:45'),
+(20, 'Gray Vest Gucci', 'Gucci Gang', 6, 2799.99, '2021-12-23 13:58:03'),
+(22, 'Womens Top Floral Dress', 'Shoulderless', 7, 600, '2021-12-30 13:51:30');
 
 -- --------------------------------------------------------
 
@@ -189,7 +196,8 @@ CREATE TABLE `tempuser` (
 
 INSERT INTO `tempuser` (`temp_id`, `ipaddress`, `datecreated`, `lastname`, `firstname`, `birthdate`, `address`, `deliveryaddr`, `email`, `password`, `cardname`, `cardnumber`, `cvv`) VALUES
 (4, '::1', '2022-01-03 13:55:01', 'CAIMOR', 'REENJAY MAGAAN', '1997-06-06', 'Recodo', 'Recodo', 'reenjie17@gmail.com', 'Reenjay17', '', '', ''),
-(5, '192.168.1.3', '2022-02-01 08:10:52', '', '', '0000-00-00', '', '', '', '', '', '', '');
+(5, '192.168.1.3', '2022-02-01 08:10:52', '', '', '0000-00-00', '', '', '', '', '', '', ''),
+(7, '127.0.0.1', '2022-05-12 06:16:20', '', '', '0000-00-00', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -324,13 +332,13 @@ ALTER TABLE `wishlist`
 -- AUTO_INCREMENT for table `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=293;
+  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=294;
 
 --
 -- AUTO_INCREMENT for table `category`
@@ -342,7 +350,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT for table `photo`
 --
 ALTER TABLE `photo`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT for table `product`
@@ -360,7 +368,7 @@ ALTER TABLE `promos`
 -- AUTO_INCREMENT for table `tempuser`
 --
 ALTER TABLE `tempuser`
-  MODIFY `temp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `temp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `transaction`
