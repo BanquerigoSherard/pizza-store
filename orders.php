@@ -1,7 +1,7 @@
 <?php 
 session_start();
-include 'connections/connect.php';
-
+include ('connections/connect.php');
+ 
  ?>
 <!DOCTYPE html>
 <html>
@@ -451,7 +451,7 @@ include 'connections/connect.php';
                                     
                                     <h6 style="font-size: 14px">
                                       ORDER_NO :
-                                        <span style="font-weight: bolder"> BNC_<?php echo $row['order_id'] ?>  </span>
+                                        <span style="font-weight: bolder"> BNC_<?php echo $row['transaction_id'] ?>  </span>
                                         <br>
 
                                            Date-Ordered : <?php echo  date('F j, Y',strtotime($row['date_ordered'])) ?>

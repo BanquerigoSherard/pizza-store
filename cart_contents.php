@@ -319,7 +319,7 @@ if(isset($_POST['cartitems'])){
                              </span>
 
                              <hr>
-                               <span class="" style="font-size:15px;">Select Order Method</span>
+                               <span class="" style="font-size:15px;">Select Payment Method</span>
                       <br>
     <form method="post" action="#" onsubmit="return false" id="proceedwmethod">  
     <input type="hidden" name="proceedwmethod">             
@@ -328,7 +328,7 @@ if(isset($_POST['cartitems'])){
     <input class="form-check-input" type="radio" required="" name="flexRadioDefault" id="flexRadioDefault4" required="" value="reserve">
 
   <label class="form-check-label" for="flexRadioDefault1">
-   Reserve <i class="fas fa-info-circle text-secondary" style="font-size: 12px" data-bs-toggle="tooltip" data-bs-placement="right" title="Online booking and payment. and pick up the order in the physical store or meet in person"></i>
+   Card <i class="fas fa-info-circle text-secondary" style="font-size: 12px" data-bs-toggle="tooltip" data-bs-placement="right" title="Online booking and payment. and pick up the order in the physical store or meet in person"></i>
   </label>
 </div>
                
@@ -390,22 +390,21 @@ if(isset($_POST['cartitems'])){
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-         <div class="row">
-                            <div class="col-md-6"> <span>CREDIT/DEBIT CARD PAYMENT</span> </div>
-                            <div class="col-md-6 text-right" style="margin-top: -5px;"> <img src="https://img.icons8.com/color/36/000000/visa.png"> <img src="https://img.icons8.com/color/36/000000/mastercard.png"> <img src="https://img.icons8.com/color/36/000000/amex.png"> </div>
-                        </div>  
+         <div class="row headerModal">
+                    
+            <div class="col-md-6"> <span>CREDIT/DEBIT CARD PAYMENT</span> </div>
+            <div class="col-md-6 text-right" style="margin-top: -5px;"> <img src="https://img.icons8.com/color/36/000000/visa.png"> <img src="https://img.icons8.com/color/36/000000/mastercard.png"> <img src="https://img.icons8.com/color/36/000000/amex.png"> </div>
+          </div>  
+                        
         <button type="button" class="btn-close" id="closepm" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
          <form method="post" action="#" id="makepayment" onsubmit="return false">
           <input type="hidden" name="payment">
              <div class="container">
-                      
-
-
                  
-                        <div class="form-group"> <label for="cc-number" class="control-label">CARD NUMBER</label> <input id="cc-number" type="tel" class="input-lg form-control cc-number di" autocomplete="cc-number" placeholder="•••• •••• •••• ••••" required maxlength="16" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"> </div>
-                        <div class="row">
+                       <div class="form-group card-details"> <label for="cc-number" class="control-label">CARD NUMBER</label> <input id="cc-number" type="tel" class="input-lg form-control cc-number di" autocomplete="cc-number" placeholder="•••• •••• •••• ••••" required maxlength="16" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"> </div>
+                        <div class="row card-details">
                             <div class="col-md-6">
                                 <div class="form-group"> <label for="cc-exp" class="control-label">CARD EXPIRY</label> <input id="cc-exp" type="tel" class="input-lg form-control cc-exp di" autocomplete="cc-exp" placeholder="•• / ••" required maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"> </div>
                             </div>
@@ -413,18 +412,19 @@ if(isset($_POST['cartitems'])){
                                 <div class="form-group"> <label for="cc-cvc" class="control-label">CARD CVC</label> <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc di" autocomplete="off" placeholder="•••" required maxlength="3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"> </div>
                             </div>
                         </div>
-                        <div class="form-group"> <label for="numeric" class="control-label">CARD HOLDER NAME</label> <input type="text" class="input-lg form-control di"> </div>
-                         <div id="shipadd" class="d-none"> 
+                        <div class="form-group card-details"> <label for="numeric" class="control-label">CARD HOLDER NAME</label> <input type="text" class="input-lg form-control di"> </div>
+                         <div id="shipadd" class="d-none">
                          
                         <?php 
                         if(isset($_SESSION['user_daddress'])){
                           ?>
                         
+                          
 
-                          <label class="mt-3">Shipping Address : <span class="badge bg-success">INUSED</span></label> <br>
+                          <label>Shipping Address : <span class="badge bg-success">INUSED</span></label> <br>
                           <textarea required="" id="shippingaddress" data-userid="<?php echo $_SESSION['user_id'] ?>" class="form-control"><?php  echo $_SESSION['user_daddress']; ?></textarea>
 
-                            <button type="button" id="codbtn"  class="btn btn-warning mt-3 form-control py-2" style="font-size: .8rem;">CASH ON DELIVERY</button>
+                            <button type="button" id="codbtn"  class="btn btn-warning mt-3 mb-3 form-control py-2" style="font-size: .8rem;">CASH ON DELIVERY</button>
 
 
                                   
@@ -435,11 +435,11 @@ if(isset($_POST['cartitems'])){
                          ?>
                          </div>
 
-                        <div class="form-group">    <span class="text-success" style="font-size: 12px;font-weight: bolder;">(RECOMMENDED PAYMENT METHOD)</span> <input value="MAKE PAYMENT" type="submit" class="btn btn-success btn-lg form-control mt-3" style="font-size: .8rem;">
+                        <div class="form-group card-details">    <span class="text-success" style="font-size: 12px;font-weight: bolder;">(RECOMMENDED PAYMENT METHOD)</span> <input value="MAKE PAYMENT" type="submit" class="btn btn-success btn-lg form-control mt-3" style="font-size: .8rem;">
 
                          </div>
                     
-                    <button type="button" onclick="window.location.href='paypal.php'" class="btn btn-primary mt-3 form-control py-2" style="font-size: .8rem;">PayPal</button>
+                    <button type="button" onclick="window.location.href='paypal.php'" class="card-details btn btn-primary mt-3 form-control py-2" style="font-size: .8rem;">PayPal</button>
 
 
 
@@ -653,7 +653,13 @@ if(isset($_POST['cartitems'])){
                                    
                                       $('#pm').val('reserve');
                                       $('#shipadd').addClass('d-none');
+                                      $('.headerModal').removeClass('d-none');
+                                      $('.card-details').removeClass('d-none');
+                                      
+                                      
                                     }else if (data == 'deliver'){
+                                      $('.headerModal').addClass('d-none');
+                                      $('.card-details').addClass('d-none');
                                        $('#shipadd').removeClass('d-none');
                                        $('#pm').val('deliver');
                                     }

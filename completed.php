@@ -187,7 +187,7 @@ include 'connections/connect.php';
                                     
                                     <h6 style="font-size: 14px">
                                       ORDER_NO :
-                                        <span style="font-weight: bolder"> BNC_<?php echo $gtrans['order_id'] ?>  </span>
+                                        <span style="font-weight: bolder"> BNC_<?php echo $gtrans['transaction_id'] ?>  </span>
                                         <br>
 
                                            Date-Ordered : <?php echo  date('F j, Y',strtotime($gtrans['date_ordered'])) ?>
